@@ -88,10 +88,10 @@ cleanData = function() {
     # Use descriptive column name for subjects
     colnames(merged$subject) <- c("subject")
     #Combine mean-std values (x), activities (y) and subjects into one data frame
-    combined <- cbind(x, y, subjects)
+    combined <- cbind(cx, cy, merged$subject)
     # Given X values, y values and subjects, create an independent tidy dataset
     # with the average of each variable for each activity and each subject.
-    tidy <- ddply(df, .(subject, activity), function(x) colMeans(x[,1:60]))
+    tidy <- ddply(combined, .(subject, activity), function(x) colMeans(x[,1:60]))
     # Write tidy dataset as csv
     write.csv(tidy, "UCI_HAR_tidy.csv", row.names=FALSE)
 }
