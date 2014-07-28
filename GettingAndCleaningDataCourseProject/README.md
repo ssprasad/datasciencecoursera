@@ -5,8 +5,8 @@ Activity Recognition data set. The full description and the data can be found
 See `CodeBook.md` for details.
 
 How to run this program in R console:
-1. source('~/datasciencecoursera/GettingAndCleaningDataCourseProject/run_analysis.R'); //Please modify this as per your folder structure.
-2. cleanData();
+1 source('~/datasciencecoursera/GettingAndCleaningDataCourseProject/run_analysis.R'); //Please modify this as per your folder structure.
+2 cleanData();
 
 Logic:
 1. Download the zipped file from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
